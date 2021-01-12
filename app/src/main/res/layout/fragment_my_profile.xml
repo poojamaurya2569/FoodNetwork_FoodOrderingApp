@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavFragments.MyProfile"
+    android:background="@color/colorAccent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person"
+            android:layout_centerInParent="true"
+            android:id="@+id/person"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/name"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/text_boundry_background"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/email"
+        android:id="@+id/email"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:textStyle="italic"
+        android:background="@drawable/text_boundry_background"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/mobile_number_10_digit"
+        android:drawableLeft="@drawable/ic_phone"
+        android:id="@+id/mobileNo"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:background="@drawable/text_boundry_background"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/delivery_address"
+        android:drawableLeft="@drawable/ic_address"
+        android:id="@+id/deliveryAddress"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:background="@drawable/text_boundry_background"
+        android:inputType="textPostalAddress"
+        android:maxLines="3"
+        />
+</LinearLayout>
+
+</FrameLayout>
